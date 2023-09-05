@@ -46,12 +46,10 @@
                 contentType: false,
                 data: form,
                 success: function(response) {
-                    console.log(response);
 
                     var res = JSON.parse(response);
-                    console.log(res);
                     if (res.status == 1) {
-                        console.log(res.status, res.msg);
+                        alert(res.status, res.msg);
                     }
                 }
             })
